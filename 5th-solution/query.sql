@@ -1,0 +1,1 @@
+SELECT name FROM CITY WHERE name = 'საქართველო'
