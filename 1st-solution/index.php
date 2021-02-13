@@ -7,7 +7,17 @@
       <title>Document</title>
 </head>
 <body>
-      <?php require_once './script/script.php'; ?>
+      <?php 
+            if($_SERVER['REQUEST_METHOD'] == 'POST') {
+                  $int = $_POST['num'];
+                  for($i = 1; $i <= $int; $i++) {
+                        if ($i % 3 == 0 && $i % 5 == 0) echo "უნილაბი <br />";
+                        else if ($i % 3 == 0 && $i % 5 != 0) echo "ილიაუნი <br />";
+                        else if ($i % 3 != 0 && $i % 5 == 0) echo "php <br />";
+                        else echo "$i <br />";
+                  }
+            }
+      ?>
       <form action="<?= $_SERVER['PHP_SELf']?>" method="POST">
             <input type="number" name="num" placeholder="Enter Number" required>
             <button type="submit">Submit</button>

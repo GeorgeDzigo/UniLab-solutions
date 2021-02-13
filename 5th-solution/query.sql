@@ -1,1 +1,1 @@
-SELECT name FROM CITY WHERE name = 'საქართველო'
+SELECT name FROM CITY WHERE name = 'საქართველო';

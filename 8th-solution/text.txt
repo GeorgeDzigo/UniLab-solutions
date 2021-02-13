@@ -1,0 +1,3 @@
+რომელი ბრძანება უნდა გავუშვათ Laravel-ის ლოკალურად დასტარტისთვის?
+
+--> php artisan serve --port=8080 ან php artisan serve <--
